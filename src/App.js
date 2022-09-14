@@ -38,6 +38,8 @@ const App = () => {
       };
       setTodos(todos => todos.concat(todo));
       nextId.current += 1; // nextId 1씩 더하기
+      setStartDate(new Date());
+      setEndDate(new Date());
     },
     [startDate, endDate],
   );
